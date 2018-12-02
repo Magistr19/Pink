@@ -1,4 +1,8 @@
 @media (max-width: $tablet-size-max) {
+  .page-header__group-wrapper {
+    height: auto;
+  }
+
   .page-header__group-container {
     display: flex;
     justify-content: space-between;
