@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Title of the page</title>
+  <title>Pink - Мобильное приложение</title>
   <link rel="preload" href="scc/style.min.css" as="style">
   <!-- <link rel="preload" href="fonts/font-name.woff2" as="font" type="font/woff2"> -->
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
@@ -12,9 +12,39 @@
 </head>
 <body class="no-js">
 
-    <!--<div style="display: none">
+    <div style="display: none">
         <include src="build/img/sprite.svg"></include>
-    </div> -->
+    </div>
+
+
+    <div class="page-container">
+      <header class="page-header">
+        <div class="flex-container-wrapper">
+          <div class="page-header__group-container page-header__group-container--open"> <!-- page-header__group-container--open -->
+            <a class="page-header__logo-link">
+              <svg class="page-header__logo-mobile" role="img" width="75" height="22">
+                <use xlink:href="#logo-mobile"></use>
+              </svg>
+              <svg class="page-header__logo-tablet" role="img" width="147" height="40">
+                <use xlink:href="#logo-tablet"></use>
+              </svg>
+              <svg class="page-header__logo-desktop" role="img" width="147" height="40">
+                <use xlink:href="#logo-desktop"></use>
+              </svg>
+            </a>
+            <button class="toggle-btn"><span class="screen-reader">Открыть меню</span></button> <!-- toggle-btn--open -->
+          </div>
+        </div>
+        <nav class="page-header__nav page-header__nav--open"> <!-- page-header__nav--open -->
+          <ul class="page-header__nav-list">
+            <li class="page-header__nav-item flex-container-wrapper"><a>Главная</a></li>
+            <li class="page-header__nav-item flex-container-wrapper"><a href="photo.html">Фотографии</a></li>
+            <li class="page-header__nav-item flex-container-wrapper"><a href="#">Конкурс</a></li>
+            <li class="page-header__nav-item flex-container-wrapper"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
 	<script src="js/script.min.js"></script>
 </body>

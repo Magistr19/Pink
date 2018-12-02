@@ -1,14 +1,39 @@
-/* @font-face {
-  font-weight: 400;
-  font-family: "PT Sans Narrow";
+/* open-sans-300 - latin_cyrillic */
+@font-face {
+  font-weight: 300;
+  font-family: "Open Sans";
   font-style: normal;
 
   font-display: swap;
-  src: local("PT Sans Narrow"), local("PTSans-Narrow"),
-  url("../fonts/pt-sans-narrow-v8-latin_cyrillic-regular.woff2") format("woff2"),
-  url("../fonts/pt-sans-narrow-v8-latin_cyrillic-regular.woff") format("woff");
+  src: local("Open Sans Light"), local("OpenSans-Light"),
+  url("../fonts/open-sans-v15-latin_cyrillic-300.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url("../fonts/open-sans-v15-latin_cyrillic-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
- */
+
+/* open-sans-regular - latin_cyrillic */
+@font-face {
+  font-weight: 400;
+  font-family: "Open Sans";
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"),
+  url("../fonts/open-sans-v15-latin_cyrillic-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url("../fonts/open-sans-v15-latin_cyrillic-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-700 - latin_cyrillic */
+@font-face {
+  font-weight: 700;
+  font-family: "Open Sans";
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"),
+  url("../fonts/open-sans-v15-latin_cyrillic-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url("../fonts/open-sans-v15-latin_cyrillic-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 
 .screen-reader {
   position: absolute !important;
@@ -24,7 +49,18 @@
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+.flex-container-wrapper {
+  /* IE 10-11 flexbug #3 fix */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
+
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: $font-color-main;
 }

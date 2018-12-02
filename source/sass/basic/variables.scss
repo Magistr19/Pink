@@ -1,1 +1,13 @@
-﻿
+﻿$mobile-size: 320px;
+$tablet-size: 660px;
+$desktop-size: 960px;
+
+$tablet-size-max: $desktop-size - 1px;
+
+$mobile-side-indent: 20px;
+$tablet-side-indent: 20px;
+$desktop-side-indent: 10px;
+
+$font-color-main: #283645; /* Black */
+$font-color-alt: #ffffff; /* White */
+$font-color-accent: #d22856; /* Pink */

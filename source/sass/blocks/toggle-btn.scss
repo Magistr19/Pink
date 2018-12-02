@@ -1,0 +1,94 @@
+.toggle-btn {
+  position: relative;
+
+  width: 50px;
+  height: 24px;
+  padding-right: 0;
+  padding-left: 0;
+
+  background-color: transparent;
+  border-width: 0;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background-color: #ffffff;
+    box-shadow: 0 10px 0 0 #ffffff,
+    0 20px 0 0 #ffffff;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      background-color: #d22856;
+      box-shadow: 0 10px 0 0 #d22856,
+      0 20px 0 0 #d22856;
+    }
+  }
+
+  &:focus {
+    outline: none;
+
+    &::before,
+    &::after {
+      background-color: #d22856;
+      box-shadow: 0 10px 0 0 #d22856,
+      0 20px 0 0 #d22856;
+    }
+  }
+
+  &:active {
+    &::before,
+    &::after {
+      opacity: 0.3;
+    }
+  }
+}
+
+.toggle-btn--open {
+  width: 24px;
+  height: 23px;
+
+  &::before,
+  &::after {
+    transform: rotate(45deg);
+    box-shadow: none;
+    top: 8px;
+  }
+
+  &::after {
+    display: block;
+    transform: rotate(-45deg);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    &::before,
+    &::after {
+      box-shadow: none;
+    }
+  }
+}
+
+.no-js .toggle-btn {
+  display: none;
+}
+
+@media (min-width: $desktop-size) {
+  .toggle-btn {
+    display: none;
+  }
+}
