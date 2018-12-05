@@ -36,6 +36,8 @@
 
   .page-header__nav--open {
     display: block;
+    position: absolute;
+    width: 100%;
   }
 
   .page-header__nav-list {
